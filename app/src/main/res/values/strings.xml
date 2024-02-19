@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Goal</string>
+    <string name="goal">Goal</string>
+    <string name="goal_item_push_ups">俯卧撑</string>
+    <string name="goal_item_push_ups_count">100</string>
+    <string name="goal_item_sit_ups">仰卧起坐</string>
+    <string name="goal_item_sit_ups_count">100</string>
+    <string name="goal_item_squats">深蹲</string>
+    <string name="goal_item_squats_count">100</string>
+    <string name="goal_item_running">长跑</string>
+    <string name="goal_item_running_count">10</string>
+    <string name="goal_failed_tip">警告：无法完成每日任务将会收到对应的惩罚。</string>
 </resources>
