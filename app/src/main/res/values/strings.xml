@@ -10,4 +10,6 @@
     <string name="goal_item_running">长跑</string>
     <string name="goal_item_running_count">/10KM</string>
     <string name="goal_failed_tip">警告：无法完成每日任务将会收到对应的惩罚。</string>
+    <string name="goal_set_alarm">设置闹钟</string>
+    <string name="goal_cancle_alarm">取消闹钟</string>
 </resources>

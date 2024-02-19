@@ -26,4 +26,9 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:inputType">number</item>
     </style>
+
+    <style name="Goal_Button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
 </resources>
