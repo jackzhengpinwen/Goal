@@ -10,8 +10,19 @@
         android:label="Goal"
         tools:layout="@layout/fragment_goal">
         <action
-            android:id="@+id/action_alarmsListFragment_to_createAlarmFragment"
+            android:id="@+id/action_goalFragment_to_createAlarmFragment"
             app:enterAnim="@anim/fragment_fade_enter"
-            app:exitAnim="@anim/fragment_fade_exit"/>
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:destination="@+id/createAlarmFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/createAlarmFragment"
+        android:name="com.zpw.goal.ui.fragments.CreateAlarmFragment"
+        android:label="Schedule Alarm">
+        <action
+            android:id="@+id/action_createAlarmFragment_to_goalFragment"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/goalFragment"/>
     </fragment>
 </navigation>

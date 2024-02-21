@@ -211,7 +211,7 @@
             layout="@layout/item_alarm"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fragment_listalarms_addAlarm"
+            android:id="@+id/fragment_goal_addAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
