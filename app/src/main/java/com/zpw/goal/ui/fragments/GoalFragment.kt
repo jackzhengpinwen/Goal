@@ -22,8 +22,6 @@ class GoalFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        // Inflate the layout for this fragment
         fragmentAlarmsListBinding = FragmentGoalBinding.inflate(inflater, container, false)
         val view: View = fragmentAlarmsListBinding.root
         fragmentAlarmsListBinding.fragmentGoalAddAlarm.setOnClickListener {

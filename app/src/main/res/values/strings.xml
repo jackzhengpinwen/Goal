@@ -12,4 +12,17 @@
     <string name="goal_failed_tip">警告：无法完成每日任务将会收到对应的惩罚。</string>
     <string name="goal_set_alarm">设置闹钟</string>
     <string name="goal_cancle_alarm">取消闹钟</string>
+    <string name="goal_set_alarm_time">设置闹钟提醒时间</string>
+    <string name="goal_alarm_title">闹钟标题</string>
+    <string name="goal_recurring_alarm">重复提醒</string>
+    <string name="goal_alarm_mon">星期一</string>
+    <string name="goal_alarm_tue">星期二</string>
+    <string name="goal_alarm_wen">星期三</string>
+    <string name="goal_alarm_thu">星期四</string>
+    <string name="goal_alarm_fri">星期五</string>
+    <string name="goal_alarm_sat">星期六</string>
+    <string name="goal_alarm_sun">星期日</string>
+    <string name="goal_alarm_music">闹钟音乐</string>
+    <string name="goal_alarm_vibrate">震动</string>
+    <string name="goal_alarm_schedule">开启闹钟</string>
 </resources>
