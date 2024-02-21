@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/goalFragment">
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.zpw.goal.ui.fragments.GoalFragment"
+        android:label="Goal"
+        tools:layout="@layout/fragment_goal">
+        <action
+            android:id="@+id/action_alarmsListFragment_to_createAlarmFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"/>
+    </fragment>
+</navigation>

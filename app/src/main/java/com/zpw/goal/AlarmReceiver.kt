@@ -6,17 +6,20 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.zpw.goal.ui.activities.MainActivity
 
 class AlarmReceiver: BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
+        Toast.makeText(context, "收到提醒", Toast.LENGTH_SHORT).show();
         val nextActivity = Intent(context, MainActivity::class.java)
         intent?.apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
-        val pendingIntent = PendingIntent.getActivity(context, 0, nextActivity, 0)
+        val pendingIntent = PendingIntent.getActivity(context, 0, nextActivity, PendingIntent.FLAG_MUTABLE)
         context?.let {
             val builder = NotificationCompat.Builder(it, "Goal")
                 .setSmallIcon(androidx.core.R.drawable.notification_action_background)
@@ -30,6 +33,7 @@ class AlarmReceiver: BroadcastReceiver() {
                 return
             }
             NotificationManagerCompat.from(it).notify(911 , builder.build())
+            Toast.makeText(context, "发送提醒", Toast.LENGTH_SHORT).show();
         }
     }
 }
